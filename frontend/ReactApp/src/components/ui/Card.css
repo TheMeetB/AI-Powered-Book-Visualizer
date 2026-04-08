@@ -1,0 +1,33 @@
+.card {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-title {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+.card-description {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.card-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}

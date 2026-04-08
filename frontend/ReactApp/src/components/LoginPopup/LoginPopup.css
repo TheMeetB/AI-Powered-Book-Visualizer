@@ -1,0 +1,194 @@
+/* Login Popup Premium Library Theme */
+.login-popup-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  /* Darker backdrop for library mood */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1000;
+  padding: 20px;
+}
+
+.login-popup-content {
+  background: var(--lib-bg);
+  /* Use library background */
+  color: var(--lib-text);
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 12px;
+  /* Less rounded, more classic */
+  box-shadow: var(--shadow-elegant);
+  /* Soft elegant shadow */
+  border: 1px solid var(--lib-border);
+  text-align: center;
+  position: relative;
+}
+
+.login-popup-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--lib-text);
+}
+
+.login-popup-error {
+  color: #ef4444;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.login-popup-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  /* Classic slight round */
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--lib-border);
+  color: var(--lib-text);
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  margin-bottom: 16px;
+  outline: none;
+  transition: all var(--transition-smooth);
+  box-sizing: border-box;
+}
+
+.login-popup-input:focus {
+  border-color: var(--lib-accent);
+  background: rgba(212, 175, 55, 0.05);
+  /* Gold tint */
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+}
+
+.login-popup-remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--lib-text-dim);
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.login-popup-remember input {
+  accent-color: var(--lib-accent);
+}
+
+.login-popup-forgot {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--lib-accent);
+  cursor: pointer;
+  transition: color var(--transition-smooth);
+}
+
+.login-popup-forgot:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.login-popup-button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  font-size: 1rem;
+  background: var(--lib-accent);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+}
+
+.login-popup-button:hover {
+  background: var(--lib-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.login-popup-switch {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: var(--lib-text-dim);
+  cursor: pointer;
+  transition: color var(--transition-smooth);
+}
+
+.login-popup-switch:hover {
+  color: var(--lib-text);
+}
+
+.login-popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--lib-text-dim);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-popup-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--lib-text);
+}
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--lib-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-logo {
+  width: 120px;
+  height: auto;
+  animation: elegant-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  /* Add gold tint to logo if it's white */
+  filter: brightness(0) invert(1) sepia(100%) saturate(300%) hue-rotate(5deg) drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+}
+
+@keyframes elegant-pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(0) invert(1) sepia(100%) saturate(300%) hue-rotate(5deg) drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+  }
+
+  50% {
+    opacity: .7;
+    transform: scale(0.95);
+    filter: brightness(0) invert(1) sepia(100%) saturate(300%) hue-rotate(5deg) drop-shadow(0 0 20px rgba(212, 175, 55, 0.8));
+  }
+}
+
+@media (max-width: 480px) {
+  .login-popup-content {
+    padding: 24px;
+    margin: 16px;
+  }
+}

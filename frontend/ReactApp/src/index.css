@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+:root {
+  --lib-bg: #0A0C10;
+  /* Deep charcoal/navy */
+  --lib-surface: #14171F;
+  /* Slightly lighter surface */
+  --lib-border: #2A2F3D;
+  --lib-accent: #D4AF37;
+  /* Elegant Gold */
+  --lib-accent-hover: #F3D56B;
+  --lib-text: #F8FAFC;
+  --lib-text-dim: #94A3B8;
+
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-elegant: 0 10px 40px rgba(0, 0, 0, 0.5);
+  --shadow-gold: 0 0 30px rgba(212, 175, 55, 0.15);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--lib-bg);
+  color: var(--lib-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Global Utilities */
+.glass-panel-lib {
+  background: rgba(20, 23, 31, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, var(--lib-accent-hover) 0%, var(--lib-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.button-elegant {
+  background: var(--lib-accent);
+  color: #000;
+  border: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  box-shadow: var(--shadow-gold);
+  transition: all var(--transition-smooth);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button-elegant:hover {
+  background: var(--lib-accent-hover);
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
+  transform: translateY(-2px);
+}

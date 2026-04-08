@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Created Successfully</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .email-container {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="email-container">
+    <h1>Account Created Successfully</h1>
+    <p>
+        Dear <strong>{{ username }}</strong>,<br><br>
+        Your account has been successfully created. To complete your registration, please set your password by following
+        these steps:<br>
+        1) Navigate to your User Profile.<br>
+        2) Select "Set Password" and follow the instructions.<br><br>
+        Should you need any assistance, feel free to contact us at <a href="mailto:{{ support_email }}">{{ support_email
+        }}</a>.<br><br>
+        Best Regards,<br>The Book Visualizer Team
+    </p>
+</div>
+</body>
+</html>
