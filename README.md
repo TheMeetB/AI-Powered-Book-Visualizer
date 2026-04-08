@@ -162,20 +162,7 @@ For issues, please contact: support@BookVisualiser.com
 ## 👥 Contributors
 
 ---
-•   [Ujas Rathod](https://github.com/Tr0jan1011)
-
-•   [Preet Singha](https://github.com/siliconlov)
-
-•   [Prince Patel](https://github.com/Prince2412k2)
-
-•   [Anshika Sharma](https://github.com/anshika27092003)
-
-•   [Abhishek Sharma](https://github.com/AbhishekSharma432)
-
-•   [Parthdeep Jadeja](https://github.com/D3SMOND007)
-
-•   [Raza Shaikh](https://github.com/Raza-learner)
-
-•   [Sandeep Bhagat](https://github.com/Sandeep125m)
-
-•   [Tithi Patel]()
+- Meet Bhanushali (https://github.com/TheMeetB)
+- Lay Thakkar
+- Nikunj Pandey
+- Jay Nai
